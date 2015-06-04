@@ -35,6 +35,12 @@ ActiveRecord::Schema.define(version: 20150604180936) do
     t.datetime "updated_at",       null: false
   end
 
+  create_table "exercise_types", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "steps", force: :cascade do |t|
     t.integer  "steps"
     t.date     "stepped_on"
