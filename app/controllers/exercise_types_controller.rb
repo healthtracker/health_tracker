@@ -12,11 +12,11 @@ class ExerciseTypesController < ApplicationController
   def create
     @exercise_type = ExerciseType.new(exercise_type_params)
     respond_to do |format|
-      if @exercise_type.save
-        redirect_to @exercise_type
-      else
-        format.html { render :new}
-      end
+      if @exercise_type.save
+        format.html { redirect_to @exercise_type }
+      else
+        format.html { render :new }
+      end
     end
   end
 
@@ -29,7 +29,7 @@ class ExerciseTypesController < ApplicationController
   def update
     respond_to do |format|
       if @exercise_type.update(exercise_type_params)
-        redirect_to @exercise_type
+        format.html {redirect_to @exercise_type}
       else
         format.html{ render :edit }
       end
