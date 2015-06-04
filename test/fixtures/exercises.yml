@@ -2,12 +2,18 @@
 
 one:
   description: MyString
-  calories_burned: 1.5
+  calories_burned: 500
   exercise_type_id: 1
-  date: 2015-06-04
+  date: <%= Time.now %>
 
 two:
   description: MyString
-  calories_burned: 1.5
+  calories_burned: 200
   exercise_type_id: 1
-  date: 2015-06-04
+  date: <%= Time.now %>
+
+three:
+  description: MyString
+  calories_burned: 300
+  exercise_type_id: 1
+  date: <%= Time.now-1.day %>

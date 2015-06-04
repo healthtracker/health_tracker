@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  calories: 1.5
-  calories_on: 2015-06-04
+  calories: 300
+  calories_on: <%= Time.now %>
 
 two:
-  calories: 1.5
-  calories_on: 2015-06-04
+  calories: 700
+  calories_on: <%= Time.now %>
+
+three:
+  calories: 200
+  calories_on: <%= Time.now-1.day %>
