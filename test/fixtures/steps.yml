@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  steps: 1
-  stepped_on: 2015-06-04
+  steps: 1000
+  stepped_on: <%= Time.now %>
 
 two:
-  steps: 1
-  stepped_on: 2015-06-04
+  steps: 500
+  stepped_on: <%= Time.now-1.day %>
+
+three:
+  steps: 2500
+  stepped_on: <%= Time.now %>
