@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Calories:</strong>
+  <%= @consumed_cal.calories %>
+</p>
+
+<p>
+  <strong>Calories on:</strong>
+  <%= @consumed_cal.calories_on %>
+</p>
+
+<%= link_to 'Edit', edit_consumed_cal_path(@consumed_cal) %> |
+<%= link_to 'Back', consumed_cals_path %>

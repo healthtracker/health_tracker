@@ -1,0 +1,25 @@
+<%= form_for(@consumed_cal) do |f| %>
+  <% if @consumed_cal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@consumed_cal.errors.count, "error") %> prohibited this consumed_cal from being saved:</h2>
+
+      <ul>
+      <% @consumed_cal.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :calories %><br>
+    <%= f.text_field :calories %>
+  </div>
+  <div class="field">
+    <%= f.label :calories_on %><br>
+    <%= f.date_select :calories_on %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

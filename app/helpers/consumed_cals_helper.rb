@@ -1,0 +1,2 @@
+module ConsumedCalsHelper
+end
