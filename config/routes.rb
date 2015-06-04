@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :steps
   resources :weights
   resources :consumed_cals
-  resources :excercises
+  resources :exercises
   resources :exercise_types
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,9 +1,9 @@
-class CreateExcercises < ActiveRecord::Migration
+class CreateExercises < ActiveRecord::Migration
   def change
-    create_table :excercises do |t|
+    create_table :exercises do |t|
       t.string :description
       t.float :calories_burned
-      t.integer :excercise_type_id
+      t.integer :exercise_type_id
       t.date :date
 
       t.timestamps null: false
