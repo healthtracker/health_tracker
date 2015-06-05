@@ -9,7 +9,7 @@ one:
 two:
   description: MyString
   calories_burned: 200
-  exercise_type_id: 1
+  exercise_type_id: 2
   date: <%= Time.now %>
 
 three:
