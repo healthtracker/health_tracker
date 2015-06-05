@@ -4,6 +4,39 @@
 <div><h3>You Burned <%= @most_burned %> Calories <%= @most_common %></h3></div>
 <div><h3>Miles Walked Today: <%= @miles_walked %></h3></div>
 
+<table>
+  <thead>
+    <tr>
+      <th>Calories Consumed</th>
+      <td> <%= @consumed_today %> </td>
+      <td> <%= link_to 'New', new_consumed_cal_path %> </td>
+    </tr>
+    <tr>
+      <th>Steps</th>
+      <td> <%= @steps_today %> </td>
+      <td> <%= link_to 'New', new_step_path %> </td>
+    </tr>
+    <tr>
+      <th>Exercise</th>
+      <td> <%= @calories_burned_today %> </td>
+      <td> <%= link_to 'New', new_exercise_path %> </td>
+    </tr>
+    <tr>
+    <th>Weight</th>
+    <td> <%= @weight_today %> </td>
+    <td> <%= link_to 'New', new_weight_path %> </td>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+
+
+
+      </tr>
+  </tbody>
+</table>
+
 
 
 <%= link_to 'Exercise Tracker', exercises_path %> |

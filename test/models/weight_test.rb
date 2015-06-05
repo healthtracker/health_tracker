@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class WeightTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  test "can return weight today" do
+    assert Weight.weight_today
+  end
 end

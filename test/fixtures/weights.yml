@@ -6,4 +6,4 @@ one:
 
 two:
   weight: 1.5
-  weighed_on: 2015-06-05
+  weighed_on: <%= Date.today %>

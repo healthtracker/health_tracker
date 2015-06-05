@@ -2,12 +2,12 @@
 
 one:
   steps: 1000
-  stepped_on: <%= Time.now %>
+  stepped_on: <%= Date.today %>
 
 two:
   steps: 500
-  stepped_on: <%= Time.now-1.day %>
+  stepped_on: <%= Date.today-1.day %>
 
 three:
   steps: 2500
-  stepped_on: <%= Time.now %>
+  stepped_on: <%= Date.today %>

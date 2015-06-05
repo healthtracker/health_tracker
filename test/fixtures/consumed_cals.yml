@@ -2,12 +2,12 @@
 
 one:
   calories: 300
-  calories_on: <%= Time.now %>
+  calories_on: <%= Date.today %>
 
 two:
   calories: 700
-  calories_on: <%= Time.now %>
+  calories_on: <%= Date.today %>
 
 three:
   calories: 200
-  calories_on: <%= Time.now-1.day %>
+  calories_on: <%= Date.today-1.day %>

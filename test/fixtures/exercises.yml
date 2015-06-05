@@ -3,17 +3,17 @@
 one:
   description: MyString
   calories_burned: 500
-  exercise_type_id: 1
-  date: <%= Time.now %>
+  exercise_type: :one
+  date: <%= Date.today %>
 
 two:
   description: MyString
   calories_burned: 200
-  exercise_type_id: 2
-  date: <%= Time.now %>
+  exercise_type: :two
+  date: <%= Date.today %>
 
 three:
   description: MyString
   calories_burned: 300
-  exercise_type_id: 1
-  date: <%= Time.now-1.day %>
+  exercise_type: :one
+  date: <%= Date.today-1.day %>

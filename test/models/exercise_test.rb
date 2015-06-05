@@ -9,10 +9,10 @@ class ExerciseTest < ActiveSupport::TestCase
   end
 
   test "can return most common type" do
-    Exercise.create(exercise_type_id:1)
-    Exercise.create(exercise_type_id:1)
-    Exercise.create(exercise_type_id:1)
-    assert_equal "BALLIN", Exercise.most_common
+    Exercise.create(exercise_type: exercise_types(:one))
+    Exercise.create(exercise_type: exercise_types(:one))
+    Exercise.create(exercise_type: exercise_types(:one))
+    assert_equal "BALLIN", Exercise.most_common_name
   end
 
   test "can return amount of calories burned by most common type" do
