@@ -1,6 +1,5 @@
 class WeightsController < ApplicationController
   before_action :set_weight, only: [:show, :edit, :update, :destroy]
-
   # GET /weights
   # GET /weights.json
   def index
