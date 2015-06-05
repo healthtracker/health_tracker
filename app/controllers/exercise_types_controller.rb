@@ -13,7 +13,7 @@ class ExerciseTypesController < ApplicationController
     @exercise_type = ExerciseType.new(exercise_type_params)
     respond_to do |format|
       if @exercise_type.save
-        format.html { redirect_to @exercise_type }
+        format.html { redirect_to exercise_types_path }
       else
         format.html { render :new }
       end
