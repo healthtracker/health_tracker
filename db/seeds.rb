@@ -17,6 +17,7 @@ end
 Step.create(steps:Faker::Number.number(4), stepped_on:Time.now)
 Exercise.create(description:Faker::Lorem.word, calories_burned:Faker::Number.number(4), date:Time.now,exercise_type_id:(1..4).to_a.sample)
 ConsumedCal.create(calories:Faker::Number.number(4), calories_on:Time.now)
+Weight.create(weight: 200, weighed_on:Time.now)
 
 
 exercise_types.each do |n|
